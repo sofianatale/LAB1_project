@@ -1,1 +1,1 @@
-# LAB1_projectTest da Ubuntu
+# LAB1_projectTest
