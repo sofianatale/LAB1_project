@@ -1,0 +1,9 @@
+
+Confusion Matrix:
+TN = 283947 FN = 1
+FP = 0 TP = 182
+Threshold: 1e-05
+Q2 (Accuracy): 1.0
+MCC: 0.9973
+TPR (Recall): 0.9945
+PPV (Precision): 1.0
