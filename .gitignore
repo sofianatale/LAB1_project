@@ -1,0 +1,11 @@
+# Binary FASTA database index files
+*.phr
+*.pin
+*.psq
+
+# Windows metadata
+*.Zone.Identifier
+
+# Backup/temp files
+*~
+*.bak
