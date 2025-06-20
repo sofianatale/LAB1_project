@@ -65,6 +65,8 @@ The Kunitz domain (Pfam: `PF00014`) is a compact, cysteine-rich motif involved i
 - `Python` – for custom preprocessing, subset generation, and performance evaluation  
 
 ## Methodology
+For a detailed step-by-step implementation of the entire pipeline (from data collection to evaluation), see the Jupyter notebook [`pipeline.ipynb`](./pipeline.ipynb).
+
 ### 1. Dataset Preparation
 - **Positive dataset**: Proteins annotated with the InterPro ID `IPR002223` (Kunitz-type domain) were downloaded from UniProt.
 - Sequences were split by species:
@@ -134,7 +136,6 @@ python scripts/get_seq.py --ids neg_2.ids --fasta sp_negs.fasta --out neg_2.fast
 - Corresponding negative sets were matched by size for class balance.
 
 ```bash
-Copia codice
 python scripts/get_seq.py --ids pos_1.ids --fasta ok_kunitz.fasta --out pos_1.fasta
 python scripts/get_seq.py --ids pos_2.ids --fasta ok_kunitz.fasta --out pos_2.fasta
 ```
