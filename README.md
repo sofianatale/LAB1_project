@@ -1,4 +1,4 @@
-# LAB1_project – Structural HMM for Kunitz Domain Detection
+# Structural HMM for Kunitz Domain Detection
 
 ## Overview
 
