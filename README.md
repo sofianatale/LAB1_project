@@ -11,6 +11,7 @@ The Kunitz domain (Pfam: `PF00014`) is a compact, cysteine-rich motif involved i
 ## Repository Structure
 
 ### `/data/` — Input Data & Sequence Sets  
+Contains raw and processed input datasets, including positive and negative sequence sets
 - **clusters/**: clustering results and source PDB metadata  
 - **filtered/**: filtered PDB FASTA and metadata files  
 - **ids/**:  
@@ -25,16 +26,19 @@ The Kunitz domain (Pfam: `PF00014`) is a compact, cysteine-rich motif involved i
   - `positives/`: human and non-human Kunitz positives  
   - `raw/`: unfiltered datasets from UniProt and Swiss-Prot  
 
-### `/intermediate/` — Processing & Alignment Steps  
+### `/intermediate/` — Processing & Alignment Steps
+Stores intermediate files generated during the pipeline, in particular BLAST results. This folder represents key transitional steps that bridge initial data preprocessing and final evaluation.
 - Alignment files: `pdb_kunitz_rp.ali`, `pdb_kunitz_rp_formatted.ali`  
 - Filtered datasets: `pdb_kunitz_rp.fasta`, `tmp_pdb_efold_ids.txt`  
 - Cross-validation results: `pos_1.out`, `neg_2.out`, `fn_pos2.txt`  
 - BLAST results: `pdb_kunitz_nr_23.blast -outfmt 7`  
 
 ### `/models/` — Profile HMM  
+ Contains the structural HMM profile (`.hmm`) and related alignment files used for detection.
 - `structural_model.hmm`: trained HMM built with `hmmbuild` from structure-based alignment  
 
 ### `/scripts/` — Automation & Evaluation  
+Python scripts and notebooks used for sequence processing, evaluation, and plotting.
 - `get_seq.py`: extracts sequences from ID lists  
 - `performance.py`: computes MCC, precision, recall, AUC  
 - `roc_curve.ipynb`: ROC curve visualization  
@@ -42,13 +46,19 @@ The Kunitz domain (Pfam: `PF00014`) is a compact, cysteine-rich motif involved i
 - `confusion_matrix.ipynb`: confusion matrix plotting  
 
 ### `/results/` — Classification Output  
-- `classification/`:  
-  - `fold1/`, `fold2/`: E-value predictions for positive and negative sets  
-  - `combined/`: all results across both folds  
-- `evaluation/`:  
-  - Performance across thresholds (e.g., `performance_set1_thresholds.txt`)  
-- `final output/`:  
-  - `confusion_matrix_set_1.png`, `results_set_2.txt`, etc.
+Final output files such as performance tables, ROC curves, MCC plots, and confusion matrices.
+- `classification/`
+  - `fold1/`, `fold2/`: E-value prediction outputs for each fold (positive and negative sets).
+  - `combined/`: Aggregated results across both folds.
+- `evaluation/`
+  - Contains performance summaries across thresholds  
+    (e.g., `performance_set1_thresholds.txt`, `performance_set2_thresholds.txt`).
+- `final_output/`
+  - Final visual and tabular outputs, such as:  
+    - `confusion_matrix_set_1.png`  
+    - `results_set_2.txt`  
+    - ROC and MCC plots, etc.
+
 
 ### `/` — Project Root  
 - `pipeline.ipynb`: notebook describing and executing the main steps  
