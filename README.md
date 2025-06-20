@@ -75,7 +75,6 @@ Final output files such as performance tables, ROC curves, MCC plots, and confus
 - `Python` – for custom preprocessing, subset generation, and performance evaluation  
 
 ## Methodology
-For a detailed step-by-step implementation of the entire pipeline (from data collection to evaluation), see the Jupyter notebook [`pipeline.ipynb`](./pipeline.ipynb).
 
 ### 1. Dataset Preparation
 - **Positive dataset**: Proteins annotated with the InterPro ID `IPR002223` (Kunitz-type domain) were downloaded from UniProt.
