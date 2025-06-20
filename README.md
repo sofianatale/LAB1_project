@@ -155,11 +155,12 @@ The script performance.py calculated MCC, precision, recall across thresholds fr
 python scripts/performance.py results/classification/combined/set_1.class
 python scripts/performance.py results/classification/combined/set_2.class
 ```
-Plots were generated with:
+Plots were generated with the following Jupyter notebooks:
 
 ```bash
-python scripts/roc_curve.py
-python scripts/mcc_plot.py
+confusion_matrix.ipynb                  # Confusion matrices for both validation folds
+roc_curve.ipynb                         # ROC curves and AUC computation
+mcc_vs_threshold_plot.ipynb            # MCC values plotted against e-value thresholds
 ```
 At the optimal threshold (1e-3), the model achieved perfect or near-perfect MCC, with no false positives, and an AUC of 1.000.
 
