@@ -8,8 +8,6 @@ This project presents the development of a profile Hidden Markov Model (HMM) for
 
 The Kunitz domain (Pfam: `PF00014`) is a compact, cysteine-rich motif involved in the inhibition of serine proteases. Its characteristic fold, stabilized by three disulfide bridges, plays essential roles in blood coagulation, inflammation regulation, neuroprotection, and toxin function in various organisms. Due to high sequence variability, structural modeling provides an alternative route for more accurate domain detection.
 
-Ecco una versione **molto più dettagliata e completa** della sezione `## Tools and Software` da inserire nel tuo `README.md`, integrando e riorganizzando professionalmente tutte le informazioni visibili negli screenshot:
-
 ## Tools and Software
 
 This pipeline integrates a variety of command-line tools, Python packages, and web resources to build and evaluate a structural HMM for the Kunitz domain. Below is a complete list of software components and their respective purposes.
