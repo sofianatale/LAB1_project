@@ -49,8 +49,6 @@ To install all Python requirements:
 pip install pandas numpy matplotlib seaborn scikit-learn biopython
 ```
 
----
-
 ### Web Tools and Databases
 
 * **[Pfam – PF00014](https://www.ebi.ac.uk/interpro/entry/pfam/PF00014):** Reference for the Kunitz domain profile and seed alignments.
@@ -135,13 +133,20 @@ Final output files such as performance tables, ROC curves, MCC plots, and confus
     - `results_set_2.txt`  
     - ROC and MCC plots, etc.
 
+### `/figures/` — Visual material for report  
+Contains all visual outputs generated during the analysis, also included in the final report:
+- Confusion matrices and ROC curves  
+- MCC vs E-value threshold plots  
+- Sequence logos and structural superpositions
+
+### `/final_report/` — Written report  
+Includes the final PDF report with full methodology and discussion.
+- `REPORT_LAB1_NATALE_SOFIA.pdf`: Final course project report
 
 ### `/` — Project Root  
 - `pipeline.ipynb`: notebook describing and executing the main steps  
 - `.gitignore`, `.gitattributes`: Git configuration files  
 - `README.md`: project description (you are here)
-
-
 
 ## Conclusion
 
